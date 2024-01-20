@@ -1,7 +1,7 @@
 version: "3"
 
 services:
-  foundryvtt:
+  foundry:
     container_name: foundryvtt
     image: felddy/foundryvtt:release
     ports:
@@ -13,6 +13,9 @@ services:
       - FOUNDRY_PASSWORD=${FOUNDRY_PASSWORD}
       - FOUNDRY_USERNAME=${FOUNDRY_USERNAME}
       - FOUNDRY_ADMIN_KEY=${FOUNDRY_ADMIN_KEY}
+    dns:
+      - "8.8.8.8"
+    network_mode: "bridge"
     networks:
       - tipi_main_network
     labels:
