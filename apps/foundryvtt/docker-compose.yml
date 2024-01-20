@@ -16,8 +16,6 @@ services:
     dns:
       - "8.8.8.8"
     network_mode: "bridge"
-    networks:
-      - tipi_main_network
     labels:
       # Main
       traefik.enable: true
