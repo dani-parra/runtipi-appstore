@@ -1,0 +1,44 @@
+{
+  "$schema": "../schema.json",
+  "name": "FoundryVTT",
+  "port": 30000,
+  "available": true,
+  "exposable": true,
+  "id": "foundryvtt",
+  "tipi_version": 1,
+  "version": "v11.315.1",
+  "categories": ["gaming"],
+  "description": "Foundry Virtual Tabletop is software that provides an innovative online role-playing experience. The software supports Windows, Mac, and Linux and allows you to self-host a game server that players connect to for free directly through a web browser.",
+  "short_desc": "DokuWiki is a simple to use and highly versatile Open Source wiki software ",
+  "author": "https://hub.docker.com/r/felddy/",
+  "source": "https://hub.docker.com/r/felddy/foundryvtt",
+  "website": "https://foundryvtt.com/",
+  "form_fields": [
+    {
+      "type": "password",
+      "label": "Foundry Password",
+      "max": 50,
+      "min": 10,
+      "required": true,
+      "env_variable": "FOUNDRY_PASSWORD"
+    },
+    {
+      "type": "text",
+      "label": "Foundry Username",
+      "max": 50,
+      "min": 3,
+      "required": true,
+      "env_variable": "FOUNDRY_USERNAME"
+    },
+    {
+      "type": "text",
+      "label": "Foundry Adminkey",
+      "max": 50,
+      "min": 3,
+      "required": true,
+      "env_variable": "FOUNDRY_ADMIN_KEY"
+    }
+
+  ],
+  "supported_architectures": ["arm64", "amd64"]
+}
