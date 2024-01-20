@@ -5,7 +5,7 @@ services:
     container_name: foundryvtt
     image: felddy/foundryvtt:release
     ports:
-      - ${APP_PORT}:30000
+      - ${APP_PORT}:30000/tcp
     volumes:
       - ${APP_DATA_DIR}/data:/data
     environment:
@@ -13,9 +13,8 @@ services:
       - FOUNDRY_PASSWORD=${FOUNDRY_PASSWORD}
       - FOUNDRY_USERNAME=${FOUNDRY_USERNAME}
       - FOUNDRY_ADMIN_KEY=${FOUNDRY_ADMIN_KEY}
-    dns:
-      - "8.8.8.8"
-    network_mode: "bridge"
+    networks:
+      - tipi_main_network
     labels:
       # Main
       traefik.enable: true
