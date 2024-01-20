@@ -9,7 +9,7 @@
   "version": "v11.315.1",
   "categories": ["gaming"],
   "description": "Foundry Virtual Tabletop is software that provides an innovative online role-playing experience. The software supports Windows, Mac, and Linux and allows you to self-host a game server that players connect to for free directly through a web browser.",
-  "short_desc": "DokuWiki is a simple to use and highly versatile Open Source wiki software ",
+  "short_desc": "Foundry Virtual Tabletop is software that provides an innovative online role-playing experience ",
   "author": "https://hub.docker.com/r/felddy/",
   "source": "https://hub.docker.com/r/felddy/foundryvtt",
   "website": "https://foundryvtt.com/",
